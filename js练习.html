@@ -1,0 +1,809 @@
+  <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	
+
+
+	
+	
+	<script type="text/javascript">
+		// var f = parseInt(window.prompt("input"));
+		// var s = parseInt(window.prompt("input"));
+		// var t = parseInt(window.prompt("input"));
+
+		// if (f>s) {
+		// 	if (f>t) {
+		// 		document.write(f);
+		// 	}else{
+		// 		document.write(t);
+		// 	}
+		// }
+		// else{
+		// 	if (s>t) {
+		// 		document.write(s);
+		// 	}else{
+		// 		document.write(t);
+		// 	}
+
+		// }
+
+
+
+		// function sum() {
+
+		// 	var result = 0;
+		// 	for (var i = 0; i < arguments.length; i++) {
+				
+		// 		result+=arguments[i];
+		// 	}
+		// 	console.log(result);
+		// }
+
+		// sum(1,2,3,1,5,3);
+
+
+
+	// function mul(n){
+
+	// 	if (n==1||n==0) {
+	// 		return 1;
+	// 	}
+	// 	return n * mul(n-1);
+	// }
+
+	// document.write(mul(5));
+
+	// function add(){
+	// 	var count = 0;
+	// 		function demo(){
+	// 			count ++;
+	// 			console.log(count);
+	// 		}
+	// 		return demo;
+
+	// 	}
+
+	// 	var counter = add();
+	// 	counter();
+	// 	counter();
+	// 	counter();
+	// 	counter();
+	// 	counter();
+	
+
+
+	// function test(){
+	// 	var num = 100;
+
+	// 	function a(){
+	// 		num ++;
+	// 		console.log(num);
+	// 	}
+	// 	function b(){
+	// 		num --;
+	// 		console.log(num);
+	// 	}
+	// 	return [a,b];
+	// }
+	// var myArr = test();
+	// myArr[0]();
+	// myArr[0]();
+	// myArr[1]();
+
+
+
+	// function test(){
+	// 	var arr = [];
+	// 	for(var i = 0; i<10; i++){
+	// 		arr[i] = function(){
+	// 			document.write(i+" ");	
+	// 		}
+	// 	}
+	// 	return arr;
+	// }
+
+	// var myArr = test();
+	// for(var j = 0; j<10; j++){
+	// 	myArr[j]();
+	// }
+
+
+
+	// function test(){
+	// 	var arr = [];
+	// 	for (var i = 0; i < 10; i++) {
+	// 		(function(j){
+	// 			arr[j] = function(){
+	// 				document.write(j +" ");
+	// 			}
+	// 		}(i));
+	// 	}
+	// 	return arr;
+	// }
+
+	// var myArr = test();
+	// for(var j = 0;j<10;j++){
+	// 	myArr[j]();
+	// }
+
+	// function test(){
+	// 	var food = "apple";
+	// 	var obj = {
+	// 		eatFood : function(){
+	// 			if(food!=""){
+	// 				console.log("I am eating " + food);
+	// 				food = "";
+	// 			}else{
+	// 				console.log("There is nothing");
+	// 			}	
+	// 		},
+	// 		pushFood : function(myFood){
+	// 			food = myFood;
+	// 		}
+	// 	}
+	// 	return obj;
+	// }
+	// var person = test();
+	// person.eatFood();
+	// person.eatFood();
+	// person.pushFood("banana");
+	// person.eatFood();
+
+	// function retByteslen(target){
+
+	// 	   var count = 0;
+	// 	   for(var i = 0;i<target.length;i++){
+	// 	   	if(target.charCodeAt(i)<=255){
+	// 	   		count++;
+	// 	   	}else{
+	// 	   		count+=2;
+	// 	   	}
+	// 	   }
+	// 	   console.log(count);
+	// }
+
+	// var x = 1;
+	// if(function f(){}){
+	// 	x+= typeof(f);
+	// }
+	// console.log(x);
+	   
+
+	// function Car() {
+	// 	this.name = "BMW";
+	// 	this.height = 1400;
+	// 	this.lang = "4900";
+	// 	this.weight = 1000;
+	// 	this.health = 100
+	// 	this.run = function(){
+	// 		this.health --;  
+	// 	}
+	// }
+
+	// var car = new Car ();
+	// var car1 = new Car ();
+	// car.name = "Benz";
+	// car1.name = "Merz";
+
+	// function Student(name,sex,age){
+
+	// 	this.name = name;
+	// 	this.sex = sex;
+	// 	this.age = age;
+	// 	this.grade = 2016;
+	// }
+
+	// var student = new Student("wzj","male",20);
+	
+
+
+	// var str = "abc";
+	// str += 1;
+	// var test = typeof(str);
+	// if (test.length == 6){
+	// 	test.sign = "hahaha";
+	// }
+	// console.log(test.sign);
+
+
+	// function Person(name,age,sex){
+	// 		var a = 0;
+	// 		this.name = name;
+	// 		this.age = age;
+	// 		this.sex = sex;
+	// 		function sss(){
+	// 			a++;
+	// 			document.write(a);
+	// 		}
+	// 		this.say = sss;
+	// }
+
+	// var oPerson = new Person();
+	// oPerson.say();
+	// oPerson.say();
+	// var oPerson1 = new Person();
+	// oPerson1.say();
+
+	// Person.prototype.LastName = "Wei";
+	// Person.prototype.say = function (){
+	// 	console.log('hehe');
+	// }
+	// function Person(name,age,sex){
+	// 	this.name = name;
+	// 	this.age = age;
+	// 	this.sex = sex;
+	// }
+	// var person = new Person('zhaojia',20,'male');
+
+
+
+// 	function Person (name,age,sex){
+// 		this.name = name;
+// 		this.age = age;
+// 		this.sex = sex;
+
+// 	}
+// 	function Student(name,age,sex,tel,grade){
+// 		Person.call(this,name,age,sex);
+// 	this.tel = tel;
+// 	this.grade = grade;
+// }
+
+// 	var student = new Student('wei',123,'male',181,2016)
+
+    //call和apply改变this指向  区别是传参列表不同
+
+	// function Wheel(wheelSize,style){
+	// 	this.wheelSize = wheelSize;
+	// 	this.style = style;
+	// }
+	// function sit(c,sitColor){
+	// 	this.c = c;
+	// 	this.sitColor = sitColor;
+	// }
+	// function Model(height,width,length){
+	// 	this.height = height;
+	// 	this.width = width;
+	// 	this.length = length;
+	// }
+
+	// function Car (wheelSize,style,c,sitColor,height,width,length){
+	// 	Wheel.call(this,wheelSize,style);
+	// 	sit.call(this,c,sitColor);
+	// 	Model.apply(this,[height,width,length]);
+	// }
+	// var car = new Car(100,'mei','zhenpi','blue',100,100,100);
+
+
+	
+	// Father.prototype.lastName = 'Wei';
+	// function Father(){
+
+	// }
+	// function Son(){
+
+	// }
+	// function inherit(Target,Origin){
+	// 	Target.prototype = Origin.prototype;
+	// }
+	// inherit(Son,Father);
+	// var son = new Son();
+ 
+
+	// function inherit(Target,Origin){
+	// 	function F() {};
+	// 	F.prototype = Origin.prototype;
+	// 	Target.prototype = new F();
+	// 	Target.prototype.constructor = Target;
+	// }
+	// Father.prototype.lastName = 'wei';
+	// function Father(){}
+	// function Son(){}
+
+	// inherit(Son,Father);
+	// var son = new Son();
+	// var father = new Father();  
+
+
+
+	// function WEI(name,wife){
+	// 	var prepareWife = 'xiaoxiao';
+
+	// 	this.name = name;
+	// 	this.wife = wife;
+	// 	this.divorce = function(){
+	// 		this.wife = prepareWife;
+	// 	}
+	// 	this.changePrepareWife = function(target){
+	// 		prepareWife = target;
+	// 	}
+	// 	this.sayPrepareWife = function(){
+	// 		console.log(prepareWife);
+	// 	}
+	// }
+
+	// var wei = new WEI('JIA','dada');
+
+
+
+	// var wei = {
+	// 	smoke : function(){
+	// 		console.log('cool~');
+	// 		return this;
+	// 	},
+	// 	drink : function(){
+	// 		console.log('so cool~');
+	// 		return this;
+	// 	}
+
+	// }
+	// wei.smoke().drink();
+
+
+
+	
+
+
+
+	// var obj = {
+	// 	name: 'wei',
+	// 	age: 123,
+	// 	sex:'male',
+	// 	height:180,
+	// 	weight:75,
+	// 	__proto__:{
+	// 		lastName : 'wei'
+	// 	}
+	// }
+
+	// for (var prop in obj){
+	// 	if(obj.hasOwnProperty(prop)){
+	// 		console.log(obj[prop]);
+
+	// 	}
+	// }
+
+
+
+	// A instanceof B  ！！！看A对象的原型链上有没有B的原型
+
+
+
+	// function foo(){
+	// 	bar.apply(null,arguments);
+	// }	
+
+	// function bar(){
+	// 	console.log(arguments);
+
+	// }
+	// foo(1,2,3,4,5);
+
+
+
+	// var obj = {
+	// 	a: function(){
+	// 		console.log(this.name)
+	// 	},
+	// 	name:'abc'
+	// }
+	// 	obj.a();      谁调用，this就是谁
+
+
+	// var name = '222';
+	// var a = {
+	// 	name:'111',
+	// 	say: function(){
+	// 		console.log(this.name);
+	// 	}
+	// }
+	// var fun = a.say;
+	// fun()
+	// a.say()
+	// var b = {
+	// 	name:'333',
+	// 	say:function(fun){
+	// 		fun();
+	// 	}
+	// }
+	// b.say(a.say);
+	// b.say = a.say;
+	// b.say();
+
+
+
+	// var num = (function(){
+
+	// 	if(n == 1){
+	// 		return 1;
+	// 	}
+	// 	return n*arguments.callee(n - 1);
+	// }(100))   
+
+	//arguments.callee指向函数自身引用
+
+	// var a = 5;
+	// function test(){
+	// 	a = 0;
+	// 	console.log(a);
+	// 	console.log(this.a);
+	// 	var a;
+	// 	console.log(a);
+	// } 
+	// test();
+	// new test();
+
+// 	function print(){
+// 		var marty = {
+// 			name:"marty",
+// 			printName:function(){
+// 				console.log(this.name);
+// 			}
+// 		}
+// 		var test1 = {
+// 			name:"test1"
+// 		};
+// 		var test2 = {
+// 			name:"test2"
+// 		};
+// 		var test3 = {
+// 			name:"test3"
+// 		};
+// 		test3.printName = marty.printName;
+// 		var printName2 = marty.printName.bind({
+// 			name:123
+// 		});
+// 		marty.printName.call(test1);
+// 		marty.printName.apply(test2);
+// 		marty.printName();
+// 		printName2();
+// 		test3.printName();
+	
+// }
+// print();
+
+	
+	// var bar = {
+	// 	a:'002'
+	// };
+	// function print(){
+	// 	bar.a = 'a';
+	// 	Object.prototype.b = 'b';
+	// 	return function inner(){
+	// 		console.log(bar.a);
+	// 		console.log(bar.b);
+	// 	}
+	// }
+	// print()();
+
+
+	//深度克隆!!!
+	// function deepClone(origin,target){
+	// 	var target = target || {},
+	// 	toStr = Object.prototype.toString,
+	// 	arrStr = "[object Array]";
+	// 	for(var prop in origin){
+	// 		if(origin.hsaOwnproperty(prop)){
+	// 			if(origin[prop]!=="null" && typeof(origin[prop]) == 'object'){
+	// 				target[prop] = toStr.call(origin[prop]) == arrStr ? [] : {};
+	// 				deepClone(origin[prop],target[prop]);
+	// 			}else{
+	// 				target[prop] = origin[prop];
+	// 			}
+	// 		}
+	// 	}
+	// 	return target;
+	    
+	// }
+
+
+
+
+
+
+	// var arr = [1,2,3];
+	// Array.prototype.push = function(){
+	// 	for(var i = 0;i<arguments.length;i++){
+	// 		this[this.length] = arguments[i];
+	// 	}
+	// 	return this.length;
+	// }
+
+	// arr.solice(从第几位开始，截取多少的长度，在切口处添加新的数据)
+
+
+
+	// var wei = {
+	// 	name:"wei",
+	// 	age:20,
+	// 	sex:"male"
+	// }
+
+	// var zhao = {
+	// 	name:"zhao",
+	// 	age:18,
+	// 	sex:"male"
+	// }
+	// var jia = {
+	// 	name:"jia",
+	// 	age:19,
+	// 	sex:"male"
+	// }
+
+	// var arr = [wei,zhao,jia];
+
+	// arr.sort(function(a,b){
+	// 	return (a.age - b.age)
+	// });
+
+
+
+
+// 	function retBytes(str){
+// 	var num = str.length;
+// 	for(var i = 0;i<str.length;i++){
+// 		if(str.charCodeAt(i)>255){
+// 			num++;
+// 		}
+// 	}
+// 	return num;
+// }     计算字符串字节长度
+
+
+	
+	//类型区分!!!!
+	// function type(target){
+	// 	var templete = {
+	// 		"[object Array]" : "array",
+	// 		"[object Object]" : "object",
+	// 		"[object Number]" : "numeber - object",
+	// 		"[object Boolean]" : "boolean - object",
+	// 		"[object String]" : "string - object"
+	// 	}
+	// 	if (target === null){
+	// 		return "null";
+	// 	}
+	// 	if (typeof(target) == "object"){
+	// 		var str = Object.prototype.toString.call(target);
+	// 		return templete[str];
+	// 	}else{
+	// 		return typeof(target);
+	// 	}
+	// }
+
+
+
+
+	// var obj = {}
+	// function a(){
+	// 	var aa = 123;
+	// 	function b(){
+	// 		console.log(aa);
+	// 	}
+	// 	obj.fun = b;
+	// }
+	// a();
+
+
+
+	// function Person(name){
+	// 	var money = 100;
+	// 	this.name = name;
+	// 	this.makeMoney = function(){
+	// 		money ++;
+	// 	}
+	// 	this.offer = function(){
+	// 		money--;
+	// 	}
+	// }
+	// var person = new Person();
+
+
+
+
+	// var x = 1;
+	// if (function f(){}){
+	// 	x += typeof(f);
+	// } 
+	// console.log(x);
+
+
+
+	// var arr = [1,1,1,2,1,2,2];
+	// Array.prototype.unique = function(){
+	// 	var temp = {},
+	// 	arr = [],
+	// 	len = this.length;
+	// 	for(var i = 0;i < len;i ++){
+	// 		if(!temp[this[i]]){
+	// 			temp[this[i]] = "abc";
+	// 			arr.push(this[i]);
+	// 		}
+	// 	}
+	// 	return arr;
+	// }
+
+
+
+//返回元素e的第n层祖先元素节点
+	// function retParent(elem,n){
+	// 	while(elem && n){
+	// 		elem = elem.parentElement;
+	// 		n --;
+	// 	}
+	// 	return elem;
+	// }
+
+	// var i = document.getElementsByTagName('i')[0];
+
+
+
+//myChildren功能，解决以前部分浏览器兼容性问题
+
+	// Element.prototype.myChildren = function(){
+	// 	var child = this.childNodes;
+	// 	var len = child.length;
+	// 	var arr = [];
+	// 	for(var i = 0;i<len;i++){
+	// 		if (child[i].nodeType == 1) {
+	// 			arr.push(child[i]);
+	// 		}
+	// 	}
+	// 	return arr;
+	// }
+	// var div = document.getElementsByTagName('div')[0];
+
+
+
+	// var div = document.createElement('div');
+	// var p = document.createElement('p');
+	// document.body.appendChild(div);
+	// div.appendChild(p);
+	// div.setAttribute('class','example');
+	// p.setAttribute('class','slogan');
+	// p.innerHTML = "hahaha";
+	
+
+	//封装insertAfter函数
+	// Element.prototype.insertAfter = function (targetNode,afterNode){
+	// 	var beforeNode = afterNode.nextElementSibling;
+	// 	if(beforeNode == null){
+	// 		this.appendChild(targetNode);
+	// 	}else{
+	// 		this.insertBefore(targetNode,beforeNode);
+	// 	}
+	// }
+	
+	 
+
+	// var firstTime = new Date().getTime();
+	// for (var i = 0; i < 2000000000; i++) {
+	// }
+	// var lastTime = new Date().getTime();
+	// console.log(lastTime - firstTime);
+
+    
+
+ //    var minutesNode = document.getElementsByTagName('input')[0];
+ //    var secondsNode = document.getElementsByTagName('input')[1];
+ //    var minutes = 0;
+ //    var seconds = 0;
+
+ //    var timer = setInterval(function(){
+ //    	seconds ++;
+ //    	if(seconds == 60){
+ //    		seconds = 0;
+ //    		minutes ++;
+ //    	}
+ //    	secondsNode.value = seconds;
+ //    	minutesNode.value = minutes;
+
+ //    	if (minutes == 3) {
+ //    		clearInterval(timer);
+ //    	}
+
+	// },10);
+
+
+
+
+//查看滚动条距离
+ 	// function getScoreOffset(){
+ 	// 	if(window.pageXOffset){
+ 	// 		return {
+ 	// 			x : window.pageXOffset,
+ 	// 			y : window.pageYOffset
+ 	// 		}
+ 	// 	}else{
+ 	// 		return {
+ 	// 			x : document.body.scrollLeft + document.documentElement.scrollLeft,
+ 	// 			y : document.body.scrollTop  + document.documentElement.scrollTop
+ 	// 		}
+ 	// 	}
+ 	// }
+
+
+//封装触发事件的兼容性问题
+ 	// function addEvent(elem,type,handle){
+ 	// 	if(elem.addEventListener){
+ 	// 		elem.addEventListener(type,handle,false);
+ 	// 	}else if(elem.attachEvent){
+ 	// 		elem.attachEvent('on'+ type,function(){
+ 	// 			handle.call(elem);
+ 	// 		})
+ 	// 	}else{
+ 	// 		elem['on' + type] = handle;
+ 	// 	}
+ 	// }
+
+    
+
+//封装取消冒泡的兼容性问题
+	// function stopBubble(event){
+	// 	if(event.stopPropagation){
+	// 		event.stopPropagation();
+	// 	}else{
+	// 		event.cancelBubble = true;
+	// 	}
+	// }
+
+
+
+//封装阻止默认事件的兼容性问题
+
+    // function cancelHandle(event){
+    // 	if(event.preventDefault){
+    // 		event.preventDefault();
+    // 	}else{
+    // 		event.returnValue = false;
+    // 	}
+    // }
+
+
+
+    // var firstTime = 0;
+    // var lastTime = 0;
+    // var key = false;
+    // document.onmousedown = function(){
+    // 	firstTime = new Date().getTime();
+    // }
+    // document.onmouseup = function(){
+    // 	lastTime = new Date().getTime();
+    // 	if(lastTime - firstTime < 300){
+    // 		key = true;
+    // 	}
+    // }
+    // document.onclick = function(){
+    // 	if(key){
+    // 		console.log('click');
+    // 		key = false;
+    // 	}
+    // }
+
+
+    function Foo(){
+    	getName = function (){alert(1)}
+    	return this;
+
+    }
+    
+    Foo.getName = function(){ alert(2);}
+    Foo.prototype.getName = function(){ alert(3)}
+    var getName = function(){ alert(4)}
+    function getName(){ alert(5)}
+
+    // console.log(Foo.getName())
+    // console.log(getName())
+    // console.log(Foo().getName())
+    // console.log(getName())
+    // console.log(new Foo.getName())
+    // console.log(new Foo().getName())
+    // console.log(new new Foo().getName())
+</script>
+	
+</body>
+</html>
